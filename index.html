@@ -3,84 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentación: Cambio de Imágenes y URLs</title>
+    <title>App Creator 24</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
-        h1, h2 {
+        header {
+            background: linear-gradient(to right, #35424a, #e8491d);
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100px; /* Ajusta el tamaño del ícono aquí */
+            margin-bottom: 20px;
+        }
+        .cta {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 18px;
+        }
+        .cta:hover {
+            background: #c43e17;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .feature {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .feature h3 {
             color: #35424a;
         }
-        code {
-            background: #e4e4e4;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: monospace;
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
         }
-        pre {
-            background: #ddd;
-            padding: 10px;
+        .screenshot {
+            margin: 10px;
+        }
+        .screenshot img {
+            max-width: 300px; /* Ajusta el tamaño de las capturas aquí */
             border-radius: 5px;
-            overflow-x: auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+            .feature {
+                flex: 1 1 100%;
+            }
+            .screenshots {
+                flex-direction: column;
+            }
+        }
+        .extra-info {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .extra-info p {
+            font-size: 16px;
+        }
+        .emoji {
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <h1>Documentación: Cambio de Imágenes y URLs</h1>
-    
-    <h2>1. Cambiar Imágenes</h2>
-    <p>Para modificar una imagen en el código HTML, simplemente cambia el valor del atributo <code>src</code> en la etiqueta <code>&lt;img&gt;</code>.</p>
-    
-    <h3>1.1 Cambiar el Icono de la App</h3>
-    <p>Ubica el siguiente código en la sección <code>&lt;header&gt;</code>:</p>
-    <pre>
-        &lt;img src="https://www.appcreator24.com/srv/imgs/gen/2139191_ico.png" alt="Icono de App Creator 24"&gt;
-    </pre>
-    <p>Para cambiarlo, reemplaza la URL dentro del atributo <code>src</code>:</p>
-    <pre>
-        &lt;img src="URL_NUEVA_DEL_ICONO.png" alt="Nuevo Icono"&gt;
-    </pre>
-    
-    <h3>1.2 Cambiar Capturas de Pantalla</h3>
-    <p>Dentro de la sección <code>&lt;section class="screenshots"&gt;</code>, ubica los siguientes elementos:</p>
-    <pre>
-        &lt;div class="screenshot"&gt;
-            &lt;img src="http://files.corpsrtony.com/uploads/tonrut/3.jpg" alt="Captura 1"&gt;
-        &lt;/div&gt;
-    </pre>
-    <p>Cambia la URL en <code>src</code> para usar una nueva imagen:</p>
-    <pre>
-        &lt;img src="NUEVA_URL_DE_LA_IMAGEN.jpg" alt="Nueva Captura"&gt;
-    </pre>
-    
-    <h2>2. Cambiar URLs</h2>
-    <p>Para cambiar los enlaces de descarga o de la página web, edita el valor del atributo <code>href</code> en la etiqueta <code>&lt;a&gt;</code>.</p>
-    
-    <h3>2.1 Cambiar el Enlace de Descarga</h3>
-    <p>Ubica el botón de descarga dentro del encabezado:</p>
-    <pre>
-        &lt;a href="https://apk.e-droid.net/apk_t/app2139191_7409.apk?v=32" class="cta"&gt;Descargar para Android 📲&lt;/a&gt;
-    </pre>
-    <p>Para cambiarlo, reemplaza la URL:</p>
-    <pre>
-        &lt;a href="NUEVA_URL_DE_DESCARGA.apk" class="cta"&gt;Descargar para Android 📲&lt;/a&gt;
-    </pre>
-    
-    <h3>2.2 Cambiar el Enlace de la Página Web</h3>
-    <p>Ubica el enlace de exploración:</p>
-    <pre>
-        &lt;a href="https://appcreator24herramientas.blogspot.com/" class="cta"&gt;Explorar Página Web 🌐&lt;/a&gt;
-    </pre>
-    <p>Para cambiarlo, actualiza la URL dentro de <code>href</code>:</p>
-    <pre>
-        &lt;a href="NUEVA_URL_DE_LA_PAGINA" class="cta"&gt;Explorar Página Web 🌐&lt;/a&gt;
-    </pre>
-    
-    <h2>Conclusión</h2>
-    <p>Siguiendo estos pasos, puedes modificar fácilmente las imágenes y los enlaces en tu página HTML sin afectar su estructura.</p>
+    <header>
+        <img src="https://www.appcreator24.com/srv/imgs/gen/2139191_ico.png?ts=1739333775" alt="Icono de App Creator 24">
+        <h1>🌟 TONRUT 🌟</h1>
+        <p>¡Disfruta de tu anime en un solo lugar!</p>
+        <a href="https://apk.e-droid.net/apk_t/app2139191_7409.apk?v=32" class="cta">Descargar para Android 📲</a>
+    </header>
+
+    <div class="container">
+        <section class="features">
+            <div class="feature">
+                <h3>✨ En Emision </h3>
+                <p>Los mejores animes en emision.</p>
+            </div>
+            <div class="feature">
+                <h3>📄 Varias categorias </h3>
+                <p>Ina gran variedad de anime de deportes Terror entre otros.</p>
+            </div>
+            <div class="feature">
+                <h3>💬 Buen entretenimiento </h3>
+                <p>Buen contenido en un solo lugar desde tu casa.</p>
+            </div>
+            <div class="feature">
+                <h3>🛒 Gran calidad </h3>
+                <p>En alta resolucion 4K.</p>
+            </div>
+        </section>
+
+        <!-- Sección para las capturas de pantalla -->
+        <section class="screenshots">
+            <div class="screenshot">
+                <img src="http://files.corpsrtony.com/uploads/tonrut/3.jpg" alt="Captura de Pantalla 1">
+            </div>
+            <div class="screenshot">
+                <img src="http://files.corpsrtony.com/uploads/tonrut/2.jpg" alt="Captura de Pantalla 2">
+            </div>
+            <div class="screenshot">
+                <img src="http://files.corpsrtony.com/uploads/tonrut/1.jpg" alt="Captura de Pantalla 3">
+            </div>
+        </section>
+
+        <!-- Información adicional -->
+        <section class="extra-info">
+            <h2>🔗 Más Información</h2>
+            <p>Visita nuestra página para obtener más contenido y recursos:</p>
+            <a href="https://appcreator24herramientas.blogspot.com/" class="cta">Explorar Página Web 🌐</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>Desarrollado por <strong>CorpSRTony</strong></p>
+        <p>&copy; 2024 La mejor app para ver anime o peliculas.</p>
+    </footer>
 </body>
 </html>
-
