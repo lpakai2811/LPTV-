@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación: Cambio de Imágenes y URLs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        code {
+            background: #e4e4e4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentación: Cambio de Imágenes y URLs</h1>
+    
+    <h2>1. Cambiar Imágenes</h2>
+    <p>Para modificar una imagen en el código HTML, simplemente cambia el valor del atributo <code>src</code> en la etiqueta <code>&lt;img&gt;</code>.</p>
+    
+    <h3>1.1 Cambiar el Icono de la App</h3>
+    <p>Ubica el siguiente código en la sección <code>&lt;header&gt;</code>:</p>
+    <pre>
+        &lt;img src="https://www.appcreator24.com/srv/imgs/gen/2139191_ico.png" alt="Icono de App Creator 24"&gt;
+    </pre>
+    <p>Para cambiarlo, reemplaza la URL dentro del atributo <code>src</code>:</p>
+    <pre>
+        &lt;img src="URL_NUEVA_DEL_ICONO.png" alt="Nuevo Icono"&gt;
+    </pre>
+    
+    <h3>1.2 Cambiar Capturas de Pantalla</h3>
+    <p>Dentro de la sección <code>&lt;section class="screenshots"&gt;</code>, ubica los siguientes elementos:</p>
+    <pre>
+        &lt;div class="screenshot"&gt;
+            &lt;img src="http://files.corpsrtony.com/uploads/tonrut/3.jpg" alt="Captura 1"&gt;
+        &lt;/div&gt;
+    </pre>
+    <p>Cambia la URL en <code>src</code> para usar una nueva imagen:</p>
+    <pre>
+        &lt;img src="NUEVA_URL_DE_LA_IMAGEN.jpg" alt="Nueva Captura"&gt;
+    </pre>
+    
+    <h2>2. Cambiar URLs</h2>
+    <p>Para cambiar los enlaces de descarga o de la página web, edita el valor del atributo <code>href</code> en la etiqueta <code>&lt;a&gt;</code>.</p>
+    
+    <h3>2.1 Cambiar el Enlace de Descarga</h3>
+    <p>Ubica el botón de descarga dentro del encabezado:</p>
+    <pre>
+        &lt;a href="https://apk.e-droid.net/apk_t/app2139191_7409.apk?v=32" class="cta"&gt;Descargar para Android 📲&lt;/a&gt;
+    </pre>
+    <p>Para cambiarlo, reemplaza la URL:</p>
+    <pre>
+        &lt;a href="NUEVA_URL_DE_DESCARGA.apk" class="cta"&gt;Descargar para Android 📲&lt;/a&gt;
+    </pre>
+    
+    <h3>2.2 Cambiar el Enlace de la Página Web</h3>
+    <p>Ubica el enlace de exploración:</p>
+    <pre>
+        &lt;a href="https://appcreator24herramientas.blogspot.com/" class="cta"&gt;Explorar Página Web 🌐&lt;/a&gt;
+    </pre>
+    <p>Para cambiarlo, actualiza la URL dentro de <code>href</code>:</p>
+    <pre>
+        &lt;a href="NUEVA_URL_DE_LA_PAGINA" class="cta"&gt;Explorar Página Web 🌐&lt;/a&gt;
+    </pre>
+    
+    <h2>Conclusión</h2>
+    <p>Siguiendo estos pasos, puedes modificar fácilmente las imágenes y los enlaces en tu página HTML sin afectar su estructura.</p>
+</body>
+</html>
 
